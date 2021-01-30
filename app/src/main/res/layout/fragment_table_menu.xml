@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.table_menu.TableMenuFragment">
 
     <TextView
-        android:id="@+id/text_home"
-        android:text="This is Home activity\n[testing]"
+        android:id="@+id/text_table_menu"
+        android:text="This is Table menu fragment \n[testing] "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
