@@ -3,23 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.ncfoa_user_application.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.ncfoa_user_application.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_payments"
+        android:name="com.example.ncfoa_user_application.ui.payments.PaymentsFragment"
+        android:label="@string/menu_payments"
+        tools:layout="@layout/fragment_payments" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.ncfoa_user_application.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_order_history"
+        android:name="com.example.ncfoa_user_application.ui.order_history.OrderHistoryFragment"
+        android:label="@string/menu_order_history"
+        android:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/nav_qr_scanner"
+        android:name="com.example.ncfoa_user_application.ui.qr_scanner.QRScannerFragment"
+        android:label="@string/menu_qr_scanner"
+        tools:layout="@layout/fragment_qr_scanner" />
+    <fragment
+        android:id="@+id/nav_table_menu"
+        android:name="com.example.ncfoa_user_application.ui.table_menu.TableMenuFragment"
+        android:label="@string/table_menu"
+        tools:layout="@layout/fragment_table_menu"/>
+    <fragment
+        android:id="@+id/nav_order_current"
+        android:name="com.example.ncfoa_user_application.ui.order_current.OrderCurrentFragment"
+        android:label="@string/menu_order_current"
+        tools:layout="@layout/fragment_order_current" />
+    <fragment
+        android:id="@+id/nav_app_help"
+        android:name="com.example.ncfoa_user_application.ui.app_help.AppHelpFragment"
+        android:label="@string/menu_app_help"
+        tools:layout="@layout/fragment_app_help" />
+
 </navigation>

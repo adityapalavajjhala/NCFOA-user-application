@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.qr_scanner.QRScannerFragment">
 
     <TextView
-        android:id="@+id/text_home"
-        android:text="This is Home activity\n[testing]"
+        android:id="@+id/text_qr_scanner"
+        android:text="This is qr scanner activity \n[testing]"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
