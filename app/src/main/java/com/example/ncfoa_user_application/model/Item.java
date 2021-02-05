@@ -6,6 +6,25 @@ public class Item {
     private String description;
     private Double price;
 
+    public Boolean getAvailabe() {
+        return availabe;
+    }
+
+    public void setAvailabe(Boolean availabe) {
+        this.availabe = availabe;
+    }
+
+    public Integer getRating() {
+        return rating;
+    }
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+
+    private Boolean availabe;
+    private Integer rating;
+
     public Integer getId() {
         return id;
     }
