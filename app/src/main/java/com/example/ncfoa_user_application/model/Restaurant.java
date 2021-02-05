@@ -20,8 +20,12 @@ public class Restaurant {
     }
 
     public boolean addMenus(String name,Menu menu){
-        if(menus==null||menus.isEmpty())menus= new TreeMap<>();
-        if(menus.containsKey(name)||menus.containsValue(menu))return false;
+        if(menus==null
+                ||menus.isEmpty())
+            menus= new TreeMap<>();
+        if(menus.containsKey(name)
+                ||menus.containsValue(menu))
+            return false;
         menus.put(name,menu);
         return true;
     }

@@ -40,7 +40,8 @@ public class Menu {
         this.menuItems = menuItems;
     }
     public boolean addMenuItem(Item item){
-        if (menuItems.contains(item))return false;
+        if (menuItems.contains(item))
+            return false;
         menuItems.add(item);
         return true;
     }
