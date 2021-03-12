@@ -39,8 +39,7 @@ public class QrPaymentVerificationFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-       QrpaymentVerificationViewModel =
-                new ViewModelProvider(this).get(QrPaymentVerificationViewModel.class);
+
         View qrCodeIV = inflater.inflate(R.layout.fragment_qr_payment_verification, container, false);
         final ImageView imageView = qrCodeIV.findViewById(R.id.idIVQrcode);
 
@@ -97,6 +96,7 @@ public class QrPaymentVerificationFragment extends Fragment {
         });
         return qrCodeIV;
     }
+
 
 
 }

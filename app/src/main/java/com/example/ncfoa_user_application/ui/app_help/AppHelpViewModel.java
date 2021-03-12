@@ -10,7 +10,7 @@ public class AppHelpViewModel extends ViewModel {
 
     public AppHelpViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Help fragment");
+        mText.setValue("NCFOA-Help");
     }
 
     public LiveData<String> getText() {
