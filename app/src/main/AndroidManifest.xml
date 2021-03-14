@@ -9,21 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NCFOAuserapplication">
-        <activity android:name=".VerifyOTPActivity"></activity>
-        <activity android:name=".SendOTPActivity" />
-        <activity android:name=".SplashScreenActivity" >
+        <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".SendOTPActivity" />
+        <activity android:name=".SplashScreenActivity">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.NCFOAuserapplication.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.NCFOAuserapplication.NoActionBar"></activity>
     </application>
 
 </manifest>
