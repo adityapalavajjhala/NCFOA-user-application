@@ -1,33 +1,71 @@
 {
   "project_info": {
-    "project_number": "800549634721",
-    "project_id": "ncfoa-54512",
-    "storage_bucket": "ncfoa-54512.appspot.com"
+    "project_number": "1036350236955",
+    "firebase_url": "https://ncfoa-application-default-rtdb.firebaseio.com",
+    "project_id": "ncfoa-application",
+    "storage_bucket": "ncfoa-application.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:800549634721:android:5bdedeccadb6174a14a6e0",
+        "mobilesdk_app_id": "1:1036350236955:android:7e3cd159d46f16b36ccbbe",
         "android_client_info": {
-          "package_name": "com.example.ncfoa_user_application"
+          "package_name": "com.example.ncfoa_restaurant_application"
         }
       },
       "oauth_client": [
         {
-          "client_id": "800549634721-l4jo6ia227jrddot94ol3rghu7hagjji.apps.googleusercontent.com",
+          "client_id": "1036350236955-domibct0n7nlrt4eb6tbv16vtpiki4k3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBURpKtyZ_srCOE7ygYB3YRinAB5qZswNc"
+          "current_key": "AIzaSyCKoRUB-2nyKgBIJ5QlYvLMVxUuzdQJsj8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "800549634721-l4jo6ia227jrddot94ol3rghu7hagjji.apps.googleusercontent.com",
+              "client_id": "1036350236955-domibct0n7nlrt4eb6tbv16vtpiki4k3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036350236955:android:ffc5c67797bbc7816ccbbe",
+        "android_client_info": {
+          "package_name": "com.example.ncfoa_user_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036350236955-3l63kuitpni205jugkcdhvbd3p28qv40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ncfoa_user_application",
+            "certificate_hash": "c95de45f766f208f8b7e329764f08aab9ec16b04"
+          }
+        },
+        {
+          "client_id": "1036350236955-domibct0n7nlrt4eb6tbv16vtpiki4k3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKoRUB-2nyKgBIJ5QlYvLMVxUuzdQJsj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036350236955-domibct0n7nlrt4eb6tbv16vtpiki4k3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

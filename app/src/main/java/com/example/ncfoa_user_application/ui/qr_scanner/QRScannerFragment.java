@@ -23,7 +23,7 @@ public class QRScannerFragment extends Fragment {
         qrScannerViewModel =
                 new ViewModelProvider(this).get(QRScannerViewModel.class);
         View root = inflater.inflate(R.layout.fragment_qr_scanner, container, false);
-        final TextView textView = root.findViewById(R.id.text_qr_scanner);
+        final TextView textView = root.findViewById(R.id.scantext);
         qrScannerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

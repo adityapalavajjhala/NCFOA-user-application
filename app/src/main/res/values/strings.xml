@@ -1,5 +1,20 @@
 <resources>
-    <string name="app_name">NCFOA-user-application</string>
+    <string name="app_name">katal</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_you_an_one_time_password_on_this_mobile">we will send you an One Time Password on this mobile</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_91">+91</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_otp_sent_to">Enter OTP sent to</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP</string>
+    <string name="verify">Verify</string>
+    <string name="_91_">+91-</string>
+
+    <string name="navigation_open">Open navigation drawer</string>
+    <string name="navigation_close">Close navigation drawer</string>
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -13,4 +28,8 @@
     <string name="table_menu">Menu</string>
     <string name="menu_order_current">Current Order</string>
     <string name="menu_app_help">Help</string>
+
+    <string name="open">Open</string>
+    　　　
+    <string name="close">Close</string>
 </resources>

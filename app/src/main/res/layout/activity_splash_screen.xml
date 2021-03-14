@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#5ce1e6">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_margin="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_video"
+        />
+
+    <!-- <TextView
+         android:id="@+id/textView"
+         android:layout_width="match_parent"
+         android:layout_height="163dp"
+         android:layout_gravity="center"
+         android:fontFamily="@font/bangers"
+         android:gravity="center"
+         android:text="Diagnostico"
+         android:textSize="70sp" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/antic"
+         android:gravity="center"
+         android:text="A Virtual Hospital"
+         android:textSize="18sp"
+         /> -->
+
+</LinearLayout>
