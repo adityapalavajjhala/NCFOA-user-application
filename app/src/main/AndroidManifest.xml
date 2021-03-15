@@ -4,6 +4,7 @@
     package="com.example.ncfoa_user_application">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NCFOAuserapplication">
         <activity
-            android:name=".MainActivity"
+            android:name=".CheckQRVerification"
             android:label="@string/app_name"
             android:theme="@style/Theme.NCFOAuserapplication.NoActionBar">
             <intent-filter>

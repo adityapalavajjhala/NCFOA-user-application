@@ -16,7 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.ncfoa_user_application.CheckQRVerification;
 import com.example.ncfoa_user_application.R;
-import com.example.ncfoa_user_application.ui.qr_paymentVerification.QrPaymentVerificationFragment;
+//import com.example.ncfoa_user_application.ui.qr_paymentVerification.QrPaymentVerificationFragment;
 
 public class HomeFragment extends Fragment {
 
