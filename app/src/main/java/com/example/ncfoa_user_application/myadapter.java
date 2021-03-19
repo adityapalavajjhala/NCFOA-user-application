@@ -38,10 +38,11 @@ public class myadapter  extends FirebaseRecyclerAdapter<menumodel,myadapter.myvi
         return new myviewholder(view);
     }
 
-    class myviewholder extends RecyclerView.ViewHolder
+    public class myviewholder extends RecyclerView.ViewHolder
     {
         CircleImageView img;
         TextView dishname,desc,price;
+
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             img = (CircleImageView) itemView.findViewById(R.id.img1);

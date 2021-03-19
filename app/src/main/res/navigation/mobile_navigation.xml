@@ -40,5 +40,10 @@
         android:name="com.example.ncfoa_user_application.ui.app_help.AppHelpFragment"
         android:label="@string/menu_app_help"
         tools:layout="@layout/fragment_app_help" />
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="com.example.ncfoa_user_application.DataFragment"
+        android:label="@string/data"
+        tools:layout="@layout/fragment_data" />
 
 </navigation>

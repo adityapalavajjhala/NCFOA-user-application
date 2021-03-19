@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ncfoa_user_application">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,21 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NCFOAuserapplication">
         <activity android:name=".MenuActivity">
+
+
+        </activity>
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".SendOTPActivity" />
+        <activity android:name=".SplashScreenActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VerifyOTPActivity" />
-        <activity android:name=".SendOTPActivity" />
-        <activity android:name=".SplashScreenActivity">
-
-        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.NCFOAuserapplication.NoActionBar"></activity>
+            android:theme="@style/Theme.NCFOAuserapplication.NoActionBar">
+
+
+        </activity>
     </application>
 
 </manifest>

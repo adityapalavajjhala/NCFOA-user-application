@@ -14,7 +14,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.ncfoa_user_application.R;
 
+import org.w3c.dom.Text;
+
 public class QRScannerFragment extends Fragment {
+
+    TextView textView;
 
     private QRScannerViewModel qrScannerViewModel;
 
@@ -23,7 +27,8 @@ public class QRScannerFragment extends Fragment {
         qrScannerViewModel =
                 new ViewModelProvider(this).get(QRScannerViewModel.class);
         View root = inflater.inflate(R.layout.fragment_qr_scanner, container, false);
-        final TextView textView = root.findViewById(R.id.scantext);
+
+        textView = root.findViewById(R.id.scantext);
         qrScannerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
