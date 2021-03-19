@@ -17,5 +17,12 @@
         <color name="colorDivider">#BDBDBD</color>
         <color name="colorWhite">#FFFFFF</color>
 
+    <color name="zxing_viewfinder_laser">#ff0000</color>
+    <color name="zxing_possible_result_points">#00ff00</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
+
 
 </resources>

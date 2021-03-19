@@ -1,19 +1,31 @@
 package com.example.ncfoa_user_application.ui.qr_scanner;
 
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class QRScannerViewModel extends ViewModel {
+import android.Manifest;
+import android.os.Bundle;
 
-    private MutableLiveData<String> mText;
+import androidx.appcompat.app.AppCompatActivity;
 
-    public QRScannerViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is QR scanner fragment");
-    }
+import com.google.zxing.Result;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 
-    public LiveData<String> getText() {
-        return mText;
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
+
+public class QRScannerViewModel extends AppCompatActivity
+{
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 }

@@ -1,40 +1,69 @@
 package com.example.ncfoa_user_application.ui.qr_scanner;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
+
 
 import com.example.ncfoa_user_application.R;
-
-import org.w3c.dom.Text;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class QRScannerFragment extends Fragment {
 
-    TextView textView;
+    public static TextView scantext;
 
-    private QRScannerViewModel qrScannerViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        qrScannerViewModel =
-                new ViewModelProvider(this).get(QRScannerViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_qr_scanner, container, false);
-
-        textView = root.findViewById(R.id.scantext);
-        qrScannerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View RootView = inflater.inflate(R.layout.fragment_qr_scanner, container, false);
+        scantext = RootView.findViewById(R.id.scantext);
+
+
+        IntentIntegrator integrator = IntentIntegrator.forSupportFragment(QRScannerFragment.this);
+
+        integrator.setOrientationLocked(false);
+        integrator.setPrompt("Scan QR code");
+        integrator.setBeepEnabled(false);
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE);
+
+
+        integrator.initiateScan();
+        return RootView;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if(result != null) {
+            if(result.getContents() == null) {
+                Toast.makeText(getContext(), "Cancelled", Toast.LENGTH_LONG).show();
+            } else {
+
+                Toast.makeText(getContext(), "Scanned : " + result.getContents(), Toast.LENGTH_LONG).show();
+                scantext.setText(result.getContents());
+
+
+
+
+            }
+        }
+    }
+
 }

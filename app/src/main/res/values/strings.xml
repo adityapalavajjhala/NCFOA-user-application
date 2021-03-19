@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">katal</string>
+    <string name="app_name">ncfoa</string>
     <string name="otp_verification">OTP Verification</string>
     <string name="we_will_send_you_an_one_time_password_on_this_mobile">we will send you an One Time Password on this mobile</string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
@@ -35,4 +35,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="data">data</string>
+    <string name="btn_scan_now">Scan</string>
+
+
+    <string-array name="categories">
+        <item>Starters</item>
+        <item>Main Course</item>
+        <item>Veg</item>
+        <item>Non-Veg</item>
+
+
+    </string-array>
 </resources>
